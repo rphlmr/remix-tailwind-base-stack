@@ -12,7 +12,8 @@
     "format": "prettier --write .",
     "start": "remix-serve build",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "postinstall": "npm run generate:css"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.2",

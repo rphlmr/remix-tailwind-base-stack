@@ -4,7 +4,6 @@ A quick start for Remix apps with Tailwind CSS, all included.
 
 ![remix_love_tailwind](https://user-images.githubusercontent.com/20722140/192152869-ea60156f-1452-4f86-a1eb-8a9636884ba9.svg)
 
-
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
 ```
@@ -71,4 +70,3 @@ Make sure to deploy the output of `remix build`
 
 - `build/`
 - `public/build/`
-
