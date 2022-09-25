@@ -8,7 +8,7 @@ A quick start for Remix apps with Tailwind CSS, all included.
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
 ```
-npx create-remix --template rphlmr/remix-tailwind-base-stack
+npx create-remix@latest --template rphlmr/remix-tailwind-base-stack
 ```
 
 ## What's in the stack

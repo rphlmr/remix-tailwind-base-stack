@@ -9,6 +9,7 @@
     "dev:css": "npm run generate:css -- --watch",
     "dev:remix": "remix dev",
     "generate:css": "tailwindcss -o ./app/styles/tailwind.css",
+    "format": "prettier --write .",
     "start": "remix-serve build",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "typecheck": "tsc -b"
