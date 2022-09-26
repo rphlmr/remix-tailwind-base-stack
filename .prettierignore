@@ -1,5 +1,5 @@
 /build
 /public/build
 
-/.*
+/.*/
 *lock.json
