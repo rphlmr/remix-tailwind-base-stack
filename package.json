@@ -1,52 +1,51 @@
 {
-  "private": true,
-  "sideEffects": false,
-  "scripts": {
-    "build": "run-s build:*",
-    "build:css": "npm run generate:css -- --minify",
-    "build:remix": "remix build",
-    "dev": "run-p dev:*",
-    "dev:css": "npm run generate:css -- --watch",
-    "dev:remix": "remix dev",
-    "generate:css": "tailwindcss -o ./app/styles/tailwind.css",
-    "format": "prettier --write .",
-    "start": "remix-serve build",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "typecheck": "tsc -b",
-    "postinstall": "npm run generate:css"
-  },
-  "dependencies": {
-    "@headlessui/react": "^1.7.2",
-    "@heroicons/react": "^2.0.11",
-    "@remix-run/node": "^1.7.2",
-    "@remix-run/react": "^1.7.2",
-    "@remix-run/serve": "^1.7.2",
-    "isbot": "^3.5.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tailwind-merge": "^1.6.0"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^1.7.2",
-    "@remix-run/eslint-config": "^1.7.2",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/line-clamp": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.7",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-tailwindcss": "^3.6.2",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwind-scrollbar": "^2.0.1",
-    "tailwindcss": "^3.1.8",
-    "typescript": "^4.8.3"
-  },
-  "engines": {
-    "node": ">=16"
-  },
-  "prettier": {}
+	"private": true,
+	"sideEffects": false,
+	"scripts": {
+		"build": "remix build",
+		"deploy": "fly deploy --remote-only",
+		"dev": "remix dev",
+		"start": "remix-serve build",
+		"start:ci": "dotenv -- remix-serve build",
+		"test": "vitest",
+		"test:ui": "vitest --coverage --ui",
+		"coverage": "vitest run --coverage",
+		"format": "prettier --write .",
+		"lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+		"typecheck": "tsc",
+		"validate": "run-p \"test -- --run\" lint typecheck"
+	},
+	"dependencies": {
+		"@heroicons/react": "^2.0.18",
+		"@remix-run/css-bundle": "*",
+		"@remix-run/node": "*",
+		"@remix-run/react": "*",
+		"@remix-run/serve": "*",
+		"clsx": "^2.0.0",
+		"isbot": "^3.6.13",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"tailwind-merge": "^1.14.0"
+	},
+	"devDependencies": {
+		"@remix-run/dev": "*",
+		"@remix-run/eslint-config": "*",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/forms": "^0.5.4",
+		"@tailwindcss/typography": "^0.5.9",
+		"@types/react": "^18.2.20",
+		"@types/react-dom": "^18.2.7",
+		"eslint": "^8.47.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-no-relative-import-paths": "^1.5.2",
+		"eslint-plugin-tailwindcss": "^3.13.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^3.0.2",
+		"tailwind-scrollbar": "^3.0.5",
+		"tailwindcss": "^3.3.3",
+		"typescript": "^5.1.6"
+	},
+	"engines": {
+		"node": ">=18"
+	}
 }

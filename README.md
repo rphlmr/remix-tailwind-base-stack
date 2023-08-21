@@ -16,23 +16,23 @@ npx create-remix@latest --template rphlmr/remix-tailwind-base-stack
 
 Only the basics:
 
-- Styling with [Tailwind](https://tailwindcss.com/)
-- Raw unstyled components with [HeadlessUI](https://headlessui.com/)
-- Icons with [Heroicons](https://heroicons.com/)
-- Utility function to efficiently merge Tailwind CSS classes in JS without style conflicts with [Tailwind Merge](https://github.com/dcastil/tailwind-merge)
-- Tailwind official plugins :
-  - [Typography](https://tailwindcss.com/docs/typography-plugin)
-  - [Forms](https://github.com/tailwindlabs/tailwindcss-forms)
-  - [Aspect Ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
-  - [Line Clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-- Tailwind unofficial plugins :
-  - [Tailwind Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
-- Tailwind Eslint
-- Code formatting with [Prettier](https://prettier.io)
-  - [Tailwind Prettier](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
-- Linting with [ESLint](https://eslint.org)
-  - [Tailwind Eslint](https://github.com/francoismassart/eslint-plugin-tailwindcss)
-- Static Types with [TypeScript](https://typescriptlang.org)
+-   Styling with [Tailwind](https://tailwindcss.com/)
+-   Raw unstyled components with [HeadlessUI](https://headlessui.com/)
+-   Icons with [Heroicons](https://heroicons.com/)
+-   Utility function to efficiently merge Tailwind CSS classes in JS without style conflicts with [Tailwind Merge](https://github.com/dcastil/tailwind-merge)
+-   Tailwind official plugins :
+    -   [Typography](https://tailwindcss.com/docs/typography-plugin)
+    -   [Forms](https://github.com/tailwindlabs/tailwindcss-forms)
+    -   [Aspect Ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+    -   [Line Clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
+-   Tailwind unofficial plugins :
+    -   [Tailwind Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
+-   Tailwind Eslint
+-   Code formatting with [Prettier](https://prettier.io)
+    -   [Tailwind Prettier](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+-   Linting with [ESLint](https://eslint.org)
+    -   [Tailwind Eslint](https://github.com/francoismassart/eslint-plugin-tailwindcss)
+-   Static Types with [TypeScript](https://typescriptlang.org)
 
 Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --template your/repo`! Make it your own.
 
@@ -68,5 +68,5 @@ If you're familiar with deploying node applications, the built-in Remix app serv
 
 Make sure to deploy the output of `remix build`
 
-- `build/`
-- `public/build/`
+-   `build/`
+-   `public/build/`

@@ -1,7 +1,11 @@
 {
-  "tailwindCSS.experimental.classRegex": [
-    // Help Tailwind intellisense to parse Tailwind classes outside of className, when using twMerge
-    // Require https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
-    ["twMerge\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ]
+	"tailwindCSS.experimental.classRegex": [
+		// 📖 cn is for shadcn/ui classnames helper (https://ui.shadcn.com/docs/installation/manual#add-a-cn-helper)
+		// 📖 cva is for class-variance-authority (https://github.com/joe-bell/cva)
+		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+		["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+	],
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false
 }
