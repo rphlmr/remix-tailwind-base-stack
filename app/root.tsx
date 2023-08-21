@@ -1,8 +1,5 @@
-import type {
-	LinksFunction,
-	MetaFunction,
-	V2_MetaFunction,
-} from "@remix-run/node";
+import { cssBundleHref } from "@remix-run/css-bundle";
+import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import {
 	Links,
 	LiveReload,
@@ -11,9 +8,8 @@ import {
 	Scripts,
 	ScrollRestoration,
 } from "@remix-run/react";
-import { cssBundleHref } from "@remix-run/css-bundle";
 
-import tailwindStylesheetUrl from "./styles/tailwind.css";
+import tailwindStylesheetUrl from "~/styles/tailwind.css";
 
 export const meta: V2_MetaFunction = () => [
 	{ title: "Remix Tailwind Base Stack" },
